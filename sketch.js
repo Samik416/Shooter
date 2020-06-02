@@ -63,7 +63,6 @@ function draw() {
   if(gameState === 1){
   console.log(mouseX, mouseY);
 
-  bullets();
   life();
   die();
 
@@ -83,6 +82,7 @@ function draw() {
     text("You Lose!!!", displayWidth/2, displayHeight/2);
 
   }else if(lives>0){
+    bullets();
     evilship();
     evilship1();
     evilship2();
